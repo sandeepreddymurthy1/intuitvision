@@ -1,0 +1,3 @@
+find . -type f -name '*.html' -exec sed -i '' s/index.html?page_id/page_id/ {} +
+find . -type f -name '*.html' -exec sed -i '' s/index.html?p/page_id/ {} +
+./run.sh
