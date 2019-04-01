@@ -1,3 +1,30 @@
 find . -type f -name '*.html' -exec sed -i '' s/index.html?page_id/page_id/ {} +
 find . -type f -name '*.html' -exec sed -i '' s/index.html?p/page_id/ {} +
 ./run.sh
+#find . -type f -name 'index.html' -exec sed -i '' 's/https:\/\/www.reliantvision.com\///' {} +
+relpace logos
+find . -type f -name '*.html' -exec sed -i '' 's/https:\/\/www.reliantvision.com\/wp-content\/themes\/reliantvision\/images\/logos\/logo-1.png/wp-content\/themes\/reliantvision\/images\/logos\/logo-1.png/' {} +
+replace Vinjamuri to Murthy
+find . -type f -name '*.html' -exec sed -i '' s/Vinjamuri/Murthy/ {} +
+replace address
+
+find . -type f -name '*.html' -exec sed -i '' 's/100 WOOD AVE, SUITE #120 ISELIN, NJ 08830/39219 GUARDINO DR, SUITE 265, FREMONT,CA 94538/' {} +
+
+replace email
+
+find . -type f -name '*.html' -exec sed -i '' 's/@reliantvision/@intuitvision/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/@reliantvision.com/@intuitvision.com/' {} +
+
+replace phone numbers & fax
+
+find . -type f -name '*.html' -exec sed -i '' 's/(855)-420-8248/(000)-000-0000/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/(732)-734-5016/(000)-000-0000/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/(732)-284-4819/(000)-000-0000/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/91 40 2354 5520/91 40 0000 0000/' {} +
+
+Change RELIANT VISION
+find . -type f -name '*.html' -exec sed -i '' 's/RELIANT VISION/INTUIT VISION/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/Reliant Vision/Intuit Vision/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/reliant Vision/intuit Vision/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/Reliant /Intuit /' {} +
+
