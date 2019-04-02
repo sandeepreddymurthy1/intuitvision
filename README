@@ -55,12 +55,29 @@ find . -type f -name '*.html' -exec sed -i '' 's/http:\/\/reliantvision.com\/ceo
 find . -type f -name '*.html' -exec sed -i '' 's/http:\/\/reliantvision.com\/managed-services\//http:\/\/intuitvision.com\/managed-services\//' {} +
 #http://reliantvision.com/strategic-it-staffing/
 find . -type f -name '*.html' -exec sed -i '' -e 's/http:\/\/reliantvision.com\/strategic-it-staffing\//http:\/\/intuitvision.com\/strategic-it-staffing\//' {} +
+#href="http://reliantvision.com/"
+find . -type f -name '*.html' -exec sed -i '' 's/href=\"http:\/\/reliantvision.com\/\"/href=\"http:\/\/intuitvision.com\/\"/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/href=\"https:\/\/reliantvision.com\/\"/href=\"https:\/\/intuitvision.com\/\"/' {} +
 
+#http://reliantvision.com/
+find . -type f -name '*.html' -exec sed -i '' 's/http:\/\/reliantvision.com\//\//' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/https:\/\/reliantvision.com\//\//' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/href=\"\/\"/href=\"http:\/\/intuitvision.com\/\"/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/https:\/\/www.reliantvision.com\//\//' {} +
+
+#fxing logos
+find . -type f -name '*.html' -exec sed -i '' 's/wp-content\/themes\/reliantvision\/images\/logos\/logo-1.png/\/wp-content\/themes\/reliantvision\/images\/logos\/logo-1.png/' {} +
+
+#fixing social
+
+find . -type f -name '*.html' -exec sed -i '' 's/https:\/\/twitter.com\/ReliantVision/https:\/\/twitter.com\/intuitVision/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/https:\/\/www.facebook.com\/reliantvision/https:\/\/www.facebook.com\/intuitVision/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/http:\/\/www.youtube.com\/channel\/UCgfoPdE9vDCN91kyhfsrUww/http:\/\/www.youtube.com/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/http:\/\/www.linkedin.com\/company\/reliant-vision-group-inc/http:\/\/www.linkedin.com/' {} +
+find . -type f -name '*.html' -exec sed -i '' 's/https:\/\/plus.google.com\/109892062713518083115/https:\/\/plus.google.com/' {} +
 
 #page_id=144.html7.html
 find . -type f -name '*.html' -exec sed -i '' 's/page_id=144.html7.html/page_id=1447.html/' {} +
 
-
-
-scp all data
+#scp all data
 scp -r * u96810210@access777320513.webspace-data.io:/kunden/homepages/15/d777320513/htdocs/
