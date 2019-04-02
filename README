@@ -27,4 +27,5 @@ find . -type f -name '*.html' -exec sed -i '' 's/RELIANT VISION/INTUIT VISION/' 
 find . -type f -name '*.html' -exec sed -i '' 's/Reliant Vision/Intuit Vision/' {} +
 find . -type f -name '*.html' -exec sed -i '' 's/reliant Vision/intuit Vision/' {} +
 find . -type f -name '*.html' -exec sed -i '' 's/Reliant /Intuit /' {} +
-
+#Change life @ Reliant
+find . -type f -name '*.html' -exec sed -i '' -e 's/Life[[:space:]]@[[:space:]]Reliant/Life @ Intuit/' {} +
