@@ -1,3 +1,6 @@
+# Get everything from external website
+wget -r -np -k http://www.reliantvision.com/
+
 find . -type f -name '*.html' -exec sed -i '' s/index.html?page_id/page_id/ {} +
 find . -type f -name '*.html' -exec sed -i '' s/index.html?p/page_id/ {} +
 ./run.sh
@@ -27,5 +30,37 @@ find . -type f -name '*.html' -exec sed -i '' 's/RELIANT VISION/INTUIT VISION/' 
 find . -type f -name '*.html' -exec sed -i '' 's/Reliant Vision/Intuit Vision/' {} +
 find . -type f -name '*.html' -exec sed -i '' 's/reliant Vision/intuit Vision/' {} +
 find . -type f -name '*.html' -exec sed -i '' 's/Reliant /Intuit /' {} +
-#Change life @ Reliant
+
+Change life @ reliant
 find . -type f -name '*.html' -exec sed -i '' -e 's/Life[[:space:]]@[[:space:]]Reliant/Life @ Intuit/' {} +
+
+Change link http://www.reliantvision.com/life-reliant/
+
+find . -type f -name '*.html' -exec sed -i '' -e 's/http:\/\/reliantvision.com\/life-reliant/http:\/\/intuitvision.com\/life-intuit/' {} +
+
+#Change link http://reliantvision.com/about-us/
+
+find . -type f -name '*.html' -exec sed -i '' -e 's/http:\/\/reliantvision.com\/about-us\//http:\/\/intuitvision.com\/about-us\//' {} +
+# Change link http://reliantvision.com/global-delivery-model/
+find . -type f -name '*.html' -exec sed -i '' -e 's/http:\/\/reliantvision.com\/global-delivery-model\//http:\/\/intuitvision.com\/global-delivery-model\//' {} +
+#http://reliantvision.com/strategic-it-staffing/
+find . -type f -name '*.html' -exec sed -i '' -e 's/http:\/\/reliantvision.com\/strategic-it-staffing\//http:\/\/intuitvision.com\/strategic-it-staffing\//' {} +
+#http://reliantvision.com/workforce-capital-management/
+find . -type f -name '*.html' -exec sed -i '' -e 's/http:\/\/reliantvision.com\/workforce-capital-management\//http:\/\/intuitvision.com\/workforce-capital-management\//' {} +
+#http://reliantvision.com/managed-it-services/
+find . -type f -name '*.html' -exec sed -i '' 's/http:\/\/reliantvision.com\/managed-it-services\//http:\/\/intuitvision.com\/managed-it-services\//' {} +
+#http://reliantvision.com/ceo/
+find . -type f -name '*.html' -exec sed -i '' 's/http:\/\/reliantvision.com\/ceo\//http:\/\/intuitvision.com\/ceo\//' {} +
+#http://reliantvision.com/managed-services/
+find . -type f -name '*.html' -exec sed -i '' 's/http:\/\/reliantvision.com\/managed-services\//http:\/\/intuitvision.com\/managed-services\//' {} +
+#http://reliantvision.com/strategic-it-staffing/
+find . -type f -name '*.html' -exec sed -i '' -e 's/http:\/\/reliantvision.com\/strategic-it-staffing\//http:\/\/intuitvision.com\/strategic-it-staffing\//' {} +
+
+
+#page_id=144.html7.html
+find . -type f -name '*.html' -exec sed -i '' 's/page_id=144.html7.html/page_id=1447.html/' {} +
+
+
+
+scp all data
+scp -r * u96810210@access777320513.webspace-data.io:/kunden/homepages/15/d777320513/htdocs/
